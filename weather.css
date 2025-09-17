@@ -186,3 +186,27 @@ text-align: end;
         height: 180px;
         width: fit-content;
 }
+
+
+      @media screen and (max-width: 393px){
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        body::before{
+                overflow: hidden;
+
+        }
+
+
+}
