@@ -187,26 +187,44 @@ text-align: end;
         width: fit-content;
 }
 
-
-      @media screen and (max-width: 393px){
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+@media screen and (max-width: 393px) {
         body {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 15px;
-        }
-
-        body::before{
+                height: 100vh;
+                padding: 15px;
                 overflow: hidden;
-
         }
 
+        .main-container {
+                width: 100%;
+                max-width: 330px;
+                height: auto;
+                max-height: 90vh;
+                padding: 15px;
+        }
 
+        .weather-info {
+                gap: 20px;
+        }
+
+        .weather-summary-img {
+                width: 100px;
+                height: 100px;
+        }
+
+        .condition-item span {
+                font-size: 25px;
+        }
+
+        .forecast-item-container {
+                padding-bottom: 8px;
+        }
+
+        .section-message {
+                margin-top: 15%;
+        }
+
+        .section-message img {
+                height: 150px;
+        }
 }
+
