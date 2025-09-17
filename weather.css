@@ -194,6 +194,10 @@ text-align: end;
                 overflow: hidden;
         }
 
+        body::before {
+                height: 100vh;
+        }
+
         .main-container {
                 width: 100%;
                 max-width: 330px;
